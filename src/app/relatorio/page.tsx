@@ -121,6 +121,11 @@ export default function Relatorio() {
   }, []);
 
   const downloadExcel = async () => {
+
+    const momentInitDate = moment(initDate).toISOString();
+    const momentEndDate = moment(endDate).toISOString();
+
+
     if (!empresaSelecionada || !initDate || !endDate) {
       toast.error(
         "Por favor, preencha todos os campos necessários para gerar o relatório.",
@@ -128,7 +133,7 @@ export default function Relatorio() {
       return;
     }
 
-    downloadExcelReport(empresaSelecionada, initDate, endDate);
+    downloadExcelReport(empresaSelecionada, momentInitDate, momentEndDate);
   };
 
   return (
@@ -224,7 +229,7 @@ export default function Relatorio() {
                   style={{ maxWidth: "200px" }}
                   className={styles.date}
                 >
-                  <option value="PDF">PDF</option>
+                  {/* <option value="PDF">PDF</option> */}
                   <option value="Planilha">Planilha</option>
                 </select>
               </label>
