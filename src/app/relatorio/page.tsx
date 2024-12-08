@@ -235,7 +235,15 @@ export default function Relatorio() {
               </label>
 
               <div className={styles.formButtons}>
-                {tipoArquivo === "Planilha" ? (
+              <Buttons
+                    href={undefined}
+                    onClick={downloadExcel}
+                    label="Download.XLS"
+                    title="Download"
+                    icon={"download"}
+                    variant="buttonIcon"
+                  />
+                {/* {tipoArquivo === "Planilha" ? (
                   <Buttons
                     href={undefined}
                     onClick={downloadExcel}
@@ -253,7 +261,7 @@ export default function Relatorio() {
                     icon={"picture_as_pdf"}
                     variant="buttonIcon"
                   />
-                )}
+                )} */}
                 <Buttons
                   onClick={handleExibirClick}
                   href={undefined}
