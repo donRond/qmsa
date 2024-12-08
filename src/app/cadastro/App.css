@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 800px; /*  tamanho do formulário */
+  background-color: #fff;
+  padding: 30px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.user-form h1 {
+  margin-bottom: 10px; /*  espaço do título */
+  font-size: 28px; /*  o tamanho do texto */
+  text-align: center;
+}
+
+/* Usando grid para organizar os campos */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; /*  o espaço entre os campos */
+  margin-bottom: 25px;
+}
+
+.form-grid input {
+  width: 100%;
+  padding: 12px; /*  o padding dos campos */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Bordas mais arredondadas */
+  font-size: 18px; /*  o tamanho da fonte */
+}
+
+.user-form label {
+  margin-bottom: 8px; /* Mais espaço entre label e input */
+  font-weight: bold;
+  font-size: 18px; /* tamanho do texto */
+  color: #333;
+}
+
+.user-form input {
+  width: 100%;
+  padding: 14px; 
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+.user-form button {
+  width: 100%;
+  padding: 15px; 
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+.user-form button:hover {
+  background-color: #00796b;
+}
+
+.sideMenu {
+  background-color: #0097A7;
+  color: white;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.linkUtil {
+  text-decoration: none;
+}
+.error-message {
+  color: red; /* Cor do texto da mensagem de erro */
+  margin: 10px 0; /* Margem para separar da parte do formulário */
+  font-weight: bold; /* Para destacar mais a mensagem */
+}

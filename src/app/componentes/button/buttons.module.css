@@ -1,0 +1,53 @@
+.buttonIcon,
+.buttonNovo,
+.buttonSalvar{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: #fff;
+    background-color: #0097a7; 
+    transition: background-color 0.3s ease;
+    
+
+}
+.buttonIcon:hover,
+.buttonNovo:hover,
+.buttonSalvar:hover {
+    background-color: #00bcd4; 
+}
+
+.buttonVoltar{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: #fff;
+    background-color: #212121; 
+    transition: background-color 0.3s ease;
+
+}
+.buttonVoltar:hover {
+    background-color: #bdbdbd; 
+}
+.buttonDelete{
+    color: rgb(207, 16, 16);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonIcon{
+    
+    align-items: center;       
+    justify-content: center; 
+    text-align: center;     
+    
+}
+

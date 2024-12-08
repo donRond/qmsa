@@ -1,0 +1,74 @@
+.timeSheet {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+       
+}
+
+.date {
+    padding: 10px; /* Espaçamento interno do campo de data */
+    border: 1px solid #0097A7; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+
+.formulario {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário na página */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo do formulário */
+    border: 1px solid #0097a7; /* Borda cinza clara */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.formGroup,
+.formGroupHour {
+    margin-bottom: 15px; /* Espaçamento entre os campos do formulário */
+}
+
+.formLabel {
+    display: block; /* Faz o rótulo ocupar toda a largura do div */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    font-weight: bold; /* Destaca o texto do rótulo */
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+    width: 100%; /* Faz com que os campos ocupem toda a largura do div */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #0097A7; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.formGroupHour{
+margin-left: 20px;
+}
+.clienteList {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.clienteItem {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.noResults {
+    margin-top: 8px;
+    color: red;
+}
+
+
+
+
+
+
+
+

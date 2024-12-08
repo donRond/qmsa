@@ -1,0 +1,185 @@
+.container {
+  background-color: white; 
+  padding: 15px; 
+  max-width: 2000px; 
+  margin: 0 auto; 
+  border: 5px solid #0097a7; 
+  min-height: 100vh;
+  background-image: url('/imag.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  scroll-behavior:smooth; 
+  
+}
+
+.footer {
+  margin-top: 10px; /* Ajuste este valor conforme necessário */
+  text-align: center;
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 10px 20px; 
+}
+
+.separator {
+  border: none; 
+  height: 5px; 
+  background-color: #0097a7; 
+  margin: 0; 
+  width: 100%; 
+}
+
+.mainContent {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-between; 
+  padding: 20px;
+  flex-direction: row;
+  margin-top: 20px;
+ 
+}
+
+.contactTitle { 
+  font-size: 2rem; 
+  color: #cdd3ec; 
+  margin-bottom: 5px; 
+  line-height: 1.5; 
+}
+
+.consultoriaText {
+  font-size: 1rem; 
+  color: #cdd3ec; 
+  margin-top: 0; 
+  margin-bottom: 10px; 
+  line-height: 1.2; 
+  font-weight: bold;
+}
+
+.textContainer {
+  width: 100%; 
+  padding: 0px; 
+}
+
+.navItem {
+  display: inline-block;
+}
+
+.navList {
+  list-style: none; 
+  padding: 0; 
+  margin: 20px; 
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+.navList li {
+  margin-left: 20px; 
+}
+
+.navList a {
+  color: #cdd3ec;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navList a:hover {
+  color: #212121;
+  transition: 0.3s all;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  max-width: 400px; 
+  margin-bottom: 20px; 
+}
+
+.input {
+  width: 100%; 
+  padding: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  font-size: 1rem; 
+}
+
+.submitButton {
+  height: 50px;
+  width: 50%; 
+  background-color: #0097a7; 
+  color: white; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  font-size: 1rem; 
+  font-weight: bold;
+}
+
+.submitButton:hover {
+  background-color: #212121; 
+}
+
+
+.section {
+  height: 45vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  color: #04011d;
+  margin-bottom: 20px;
+  margin-top: 40px; 
+  border-top: 1px solid #0097a7; 
+  font-size: 1rem; 
+  font-weight: bold;
+
+}
+
+
+  .contactTitle {
+    font-size: 1.5rem; 
+  }
+
+  .consultoriaText {
+    font-size: 0.9rem; 
+  }
+
+  .input {
+    font-size: 0.9rem; 
+  }
+
+  .submitButton {
+    font-size: 0.9rem; 
+  }
+  .infoContainer {
+    max-width: 600px; 
+    margin-left: 20px; 
+    flex: 1; 
+}
+
+.infoContainer h3 {
+    font-size: 24px; 
+    color: #cdd3ec;
+    margin-bottom: 10px; 
+}
+
+.infoContainer p {
+    font-size: 16px; 
+    color: #cdd3ec; 
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+  

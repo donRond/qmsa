@@ -1,0 +1,45 @@
+/* MenuLateral.module.css */
+.menuLateral {
+  width: 50px;
+  height: 100vh;
+  background-color: #009688;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s, left 0.3s; /* Adicionado transição para a propriedade left */
+  overflow: hidden;
+}
+
+.menuLateral.closed {
+  left: -50px; /* Move o menu para fora da tela quando fechado */
+  position: relative;
+}
+
+.menuLateral.open {
+  width: 200px;
+  left: 0; /* Certifique-se de que o menu volta para a posição correta quando aberto */
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.menuItem:hover {
+  color: #B2EBF2; /* Azul claro turquesa */
+}
+
+.icon {
+  margin-right: 10px;
+}

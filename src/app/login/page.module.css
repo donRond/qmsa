@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+   
+  }
+  .container h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Largura máxima do container para evitar telas muito largas */
+  }
+
+  
+  .header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    padding: 0 20px;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid #0097A7 ;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #0097A7;  
+  }
+  
+  .main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;  
+  }
+  
+  .footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 60px; 
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .logomarca{
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+  
+  }
+.formDiv{
+
+    background-color: #0097A7;
+    transform: rotate(45deg); 
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 0 auto; 
+    
+}
+
+  .formLogin {
+    width: 350px;
+    height: 350px;  
+    transform: rotate(-45deg);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+    
+}
+
+.formLogin input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .formLogin button {
+    width: 100%;
+    padding: 10px;
+    background-color:#212121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .formLogin button:hover {
+    background-color: #b2ebf2;
+  }
+  .imageDiv {
+    flex: 1; /* Ocupa 50% da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    padding: 20px;
+  }
+
+
+
