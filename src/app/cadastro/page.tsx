@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Cadastro: React.FC = () => {
   const router = useRouter();
-  const [nomeCompleto, setNomeCompleto] = useState('');
+  const [name, setname] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
@@ -24,7 +24,7 @@ const Cadastro: React.FC = () => {
     }
 
     const usuario = {
-      nomeCompleto,
+      name,
       email,
       password: senha, // Mudança de senha para password conforme esperado pelo backend
     };
@@ -70,12 +70,12 @@ const Cadastro: React.FC = () => {
 
           <div className="form-grid">
             <div>
-              <label htmlFor="nomeCompleto">Nome Completo:</label>
+              <label htmlFor="name">Nome Completo:</label>
               <input
                 type="text"
-                id="nomeCompleto"
-                value={nomeCompleto}
-                onChange={(e) => setNomeCompleto(e.target.value)}
+                id="name"
+                value={name}
+                onChange={(e) => setname(e.target.value)}
                 required
               />
             </div>
