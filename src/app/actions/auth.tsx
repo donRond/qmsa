@@ -11,6 +11,7 @@ export async function signup(payload: formDataLogin) {
     });
 
     const data = await response.json();
+    
 
     if (typeof window !== "undefined" && data.access_token) {
       localStorage.setItem("token", data.access_token);
