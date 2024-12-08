@@ -6,7 +6,7 @@ export async function exibeRelatorio(clientId: string, initDate: string, endDate
             throw new Error("Token de autenticação não encontrado");
         }
 
-        const response = await fetch("http://localhost:3000/timestamps/report", {
+        const response = await fetch("https://api.qmsaconsultoria.com.br/timestamps/report", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -5,7 +5,7 @@ export async function getAtividades() {
     if (!token) {
       throw new Error("Token de autenticação não encontrado");
     }
-    const response = await fetch("http://api.qmsaconsultoria.com.br/activities", {
+    const response = await fetch("https://api.qmsaconsultoria.com.br/activities", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +35,7 @@ export async function getAtividadesById(id: string) {
     if (!token) {
       throw new Error("Token de autenticação não encontrado");
     }
-    const response = await fetch(`http://api.qmsaconsultoria.com.br/activities/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/activities/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -66,7 +66,7 @@ export async function updateAtividades(id: string, description: string) {
       throw new Error("Token de autenticação não encontrado");
     }
     // Atualize a atividade no servidor (substitua pela função que você usar para atualizar)
-    const response = await fetch(`http://api.qmsaconsultoria.com.br/activities/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/activities/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -96,7 +96,7 @@ export async function createAtividade(description: string) {
     if (!token) {
       throw new Error("Token de autenticação não encontrado");
     }
-    const response = await fetch(`http://api.qmsaconsultoria.com.br/activities/create`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/activities/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -126,7 +126,7 @@ export async function deleteAtividade(id: string) {
     if (!token) {
       throw new Error("Token de autenticação não encontrado");
     }
-    const response = await fetch(`http://api.qmsaconsultoria.com.br/activities/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/activities/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

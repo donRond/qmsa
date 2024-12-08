@@ -1,7 +1,7 @@
 export async function getTimeStamp() {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch("http://localhost:3000/timestamps", {
+    const response = await fetch("https://api.qmsaconsultoria.com.br/timestamps", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ export async function getTimeStamp() {
 export async function getTimeStampById(id: string) {
   const token = localStorage.getItem("token");
   try {
-    const response = await fetch(`http://localhost:3000/timestamps/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/timestamps/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export async function updateTimeStamp(
   try {
     const token = localStorage.getItem("token");
     const response = await fetch(
-      `http://localhost:3000/timestamps/${data.id}`,
+      `https://api.qmsaconsultoria.com.br/timestamps/${data.id}`,
       {
         method: "PUT",
         headers: {
@@ -92,7 +92,7 @@ export async function createTimeStamp(
 ) {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch(`http://localhost:3000/timestamps/create`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/timestamps/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -122,7 +122,7 @@ export async function createTimeStamp(
 export async function deleteTimeStamp(id: string) {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch(`http://localhost:3000/timestamps/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/timestamps/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

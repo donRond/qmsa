@@ -2,7 +2,7 @@ import { formDataLogin } from "../dtos/login.dto";
 
 export async function signup(payload: formDataLogin) {
   try {
-    const response = await fetch("http://api.qmsaconsultoria.com.br/auth/login", {
+    const response = await fetch("https://api.qmsaconsultoria.com.br/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

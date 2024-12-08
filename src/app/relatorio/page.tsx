@@ -94,7 +94,7 @@ export default function Relatorio() {
         throw new Error("Token de autenticação não encontrado");
       }
 
-      const response = await fetch("http://localhost:3000/company", {
+      const response = await fetch("https://api.qmsaconsultoria.com.br/company", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

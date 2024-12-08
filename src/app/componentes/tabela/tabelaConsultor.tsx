@@ -23,7 +23,7 @@ const TabelaConsultores: React.FC = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/user", {
+      const response = await fetch("https://api.qmsaconsultoria.com.br/user", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`, // Adiciona o token de autenticação
@@ -50,7 +50,7 @@ const TabelaConsultores: React.FC = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/user/${id}`, {
+      const response = await fetch(`https://api.qmsaconsultoria.com.br/user/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

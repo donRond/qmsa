@@ -10,7 +10,7 @@ export async function downloadExcelReport(clientId: string, initDate: string, en
   
   
     try {
-      const response = await fetch(`http://localhost:3000/timestamps/report/generate-excel?${queryParams}`, {
+      const response = await fetch(`https://api.qmsaconsultoria.com.br/timestamps/report/generate-excel?${queryParams}`, {
         method: 'GET',
         headers: {
             "Content-Type": "application/json",

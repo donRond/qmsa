@@ -21,7 +21,7 @@ export async function getClient(search?: string) {
     throw new Error("Token de autenticação não encontrado");
   }
   try {
-    const url = new URL("http://localhost:3000/company");
+    const url = new URL("https://api.qmsaconsultoria.com.br/company");
 
     if (search) url.searchParams.append("company_name", search); // Parâmetro de pesquisa
 
@@ -55,7 +55,7 @@ export async function getOneClient(id: string) {
     throw new Error("Token de autenticação não encontrado");
   }
   try {
-    const response = await fetch(`http://localhost:3000/company/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/company/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ export async function deleteClient(id: string) {
     throw new Error("Token de autenticação não encontrado");
   }
   try {
-    const response = await fetch(`http://localhost:3000/company/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/company/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ export async function createClient(payload: ClienteFormData) {
     throw new Error("Token de autenticação não encontrado");
   }
   try {
-    const response = await fetch("http://localhost:3000/company/register", {
+    const response = await fetch("https://api.qmsaconsultoria.com.br/company/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -148,7 +148,7 @@ export async function updateClient(payload: ClienteFormData, id: string) {
     throw new Error("Token de autenticação não encontrado");
   }
   try {
-    const response = await fetch(`http://localhost:3000/company/${id}`, {
+    const response = await fetch(`https://api.qmsaconsultoria.com.br/company/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

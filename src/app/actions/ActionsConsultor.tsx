@@ -5,7 +5,7 @@ export async function getConsultorById(id: string) {
       if (!token) {
         throw new Error("Token de autenticação não encontrado");
       }
-      const response = await fetch(`http://localhost:3000/user/profile/${id}`, {
+      const response = await fetch(`https://api.qmsaconsultoria.com.br/user/profile/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ export async function getConsultorById(id: string) {
         throw new Error("Token de autenticação não encontrado");
       }
       // Atualize a atividade no servidor (substitua pela função que você usar para atualizar)
-      const response = await fetch(`http://localhost:3000/user/${id}`, {
+      const response = await fetch(`https://api.qmsaconsultoria.com.br/user/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
